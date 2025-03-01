@@ -1,3 +1,4 @@
+import userImg from "../assets/images/user.jpg";
 import Calendar from "./Calendar";
 import "./News.css";
 import Weather from "./Weather";
@@ -18,8 +19,46 @@ const News = () => {
             </header>
             <div className="news-content">
                 <div className="navbar">
-                    <div className="user">User</div>
-                    <div className="categories">Categories</div>
+                    <div className="user">
+                        <img src={userImg} alt="User Image" />
+                        <p>Mary's Blog</p>
+                    </div>
+                    <div className="categories">
+                        <h1 className="nav-heading">Categories</h1>
+                        <div className="nav-links">
+                            <a href="#" className="nav-link">
+                                General
+                            </a>
+                            <a href="#" className="nav-link">
+                                World
+                            </a>
+                            <a href="#" className="nav-link">
+                                Business
+                            </a>
+                            <a href="#" className="nav-link">
+                                Technology
+                            </a>
+                            <a href="#" className="nav-link">
+                                Entertainment
+                            </a>
+                            <a href="#" className="nav-link">
+                                Sports
+                            </a>
+                            <a href="#" className="nav-link">
+                                Science
+                            </a>
+                            <a href="#" className="nav-link">
+                                Health
+                            </a>
+                            <a href="#" className="nav-link">
+                                Nation
+                            </a>
+                            <a href="#" className="nav-link">
+                                Bookmarks{" "}
+                                <i className="fa-regular fa-bookmark"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div className="news-section">
                     <div className="headline">Headline</div>
